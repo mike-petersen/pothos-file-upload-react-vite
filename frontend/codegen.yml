@@ -1,0 +1,14 @@
+---
+overwrite: true
+schema: ../backend/schema.graphql
+documents: src/**/*.graphql
+generates:
+  src/api/graphql-generated.tsx:
+    config:
+      withHooks: true
+      namingConvention:
+        enumValues: keep
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-urql

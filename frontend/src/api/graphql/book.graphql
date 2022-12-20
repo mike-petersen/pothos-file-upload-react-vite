@@ -1,0 +1,11 @@
+query Book($id: String!) {
+  book(id: $id) {
+    id
+    title
+    image
+    meta
+    userId
+    createdAt
+    updatedAt
+  }
+}

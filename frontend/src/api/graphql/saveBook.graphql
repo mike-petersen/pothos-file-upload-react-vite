@@ -1,0 +1,8 @@
+mutation SaveBook($input: BookInput!) {
+  saveBook(
+    input: $input
+  ) {
+    id
+    title
+  }
+}
